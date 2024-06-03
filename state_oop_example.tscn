@@ -66,7 +66,9 @@ offset_right = 277.0
 offset_bottom = 471.0
 text = "Play"
 
+[connection signal="pressed" from="UI/Forward" to="UI" method="play"]
 [connection signal="pressed" from="UI/Forward" to="Path2D/PathFollow2D" method="change_state" binds= [0]]
+[connection signal="pressed" from="UI/Backward" to="UI" method="play"]
 [connection signal="pressed" from="UI/Backward" to="Path2D/PathFollow2D" method="change_state" binds= [1]]
 [connection signal="pressed" from="UI/Pause" to="UI" method="pause"]
 [connection signal="pressed" from="UI/Pause" to="Path2D/PathFollow2D" method="change_state" binds= [2]]
